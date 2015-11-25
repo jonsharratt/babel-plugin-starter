@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Babel Plugin Starter",
   "homepage": "https://github.com/jonsharratt/babel-plugin-starter",
   "main": "lib",
