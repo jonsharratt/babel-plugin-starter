@@ -1,0 +1,31 @@
+{
+  "name": "babel-plugin-starter",
+  "version": "0.0.1",
+  "description": "Babel Plugin Starter",
+  "homepage": "https://github.com/jonsharratt/babel-plugin-starter",
+  "main": "lib",
+  "scripts": {
+    "test": "mocha --harmony --compilers js:babel-core/register src/spec",
+    "lint": "./node_modules/eslint/bin/eslint.js src",
+    "clean": "rm -rf lib",
+    "build": "babel src -d lib --ignore src/spec",
+    "prepublish": "npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/jonsharratt/babel-plugin-starter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jonsharratt/babel-plugin-starter.git"
+  },
+  "author": "Jon Sharratt",
+  "dependencies": {
+    "babel-core": "^6.2.1",
+    "babel-preset-es2015": "^6.1.18"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^1.10.1",
+    "mocha": "^2.3.4"
+  }
+}
