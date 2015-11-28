@@ -1,8 +1,8 @@
 export default function() {
   return {
     visitor: {
-      StringLiteral: {
-        enter: function(path) {
+      StringLiteral(path) {
+        if (path.node.value === 'Hello') {
           path.node.value = 'World';
         }
       }
