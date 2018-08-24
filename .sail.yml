@@ -1,0 +1,13 @@
+tasks:
+  install:
+    image: "node:carbon"
+    command: ["npm"]
+    args: ["install"]
+  lint:
+    image: "node:carbon"
+    command: ["npm"]
+    args: ["run", "lint"]
+  test:
+    image: "node:carbon"
+    command: ["npm"]
+    args: ["test"]
