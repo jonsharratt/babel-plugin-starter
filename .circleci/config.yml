@@ -5,6 +5,4 @@ jobs:
       - image: circleci/node:10
     steps:
       - checkout
-      - run: npm install
-      - run: npm run lint
-      - run: npm t
+      - run: sleep 60
